@@ -1,0 +1,97 @@
+<div class="container p-5 background-color">
+    <form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-12 text-center">
+             <h2>Test</h2>
+          </div>
+        </div>
+        <div class=" form-group mt-2">
+            <div class="col-9 text-right blockquote">
+                <label>1</label>
+                <label>Which among the following headstreams meets the Ganges in last? </label>
+            </div>
+            <br/>
+            <div class="col-6 blockquote">
+                <input type="radio" id="Alaknanda" value="Alaknanda" formControlName="question1">
+                <label class="margin-left">Alaknanda</label>
+                <input class="margin-left" type="radio" id="Bhagirathi" value="Bhagirathi" formControlName="question1">
+                <label class="margin-left">Bhagirathi</label>
+            </div>
+            <div class="col-1">
+                <br/>
+            </div>
+        </div>
+        <div class=" form-group mt-2">
+            <div class="col-9 text-right blockquote">
+                <label>2</label>
+                <label>The metal whose salts are sensitive to light is? </label>
+            </div>
+            <br/>
+            <div class="col-6 blockquote">
+                <input type="radio" id="Silver" value="Silver" formControlName="question2">
+                <label class="margin-left">Silver</label>
+                <input class="margin-left" type="radio" id="Copper" value="Copper" formControlName="question2">
+                <label class="margin-left">Copper</label>
+            </div>
+            <div class="col-1">
+                <br/>
+            </div>
+        </div>
+        <div class=" form-group mt-2">
+            <div class="col-9 text-right blockquote">
+                <label>3</label>
+                <label>Patanjali is well known for the compilation of – </label>
+            </div>
+            <br/>
+            <div class="col-6 blockquote">
+                <input type="radio" id="Brahma Sutra" value="Brahma Sutra" formControlName="question3">
+                <label class="margin-left">Brahma Sutra</label>
+                <input class="margin-left" type="radio" id="Yoga Sutra" value="Yoga Sutra" formControlName="question3">
+                <label class="margin-left">Yoga Sutra</label>
+            </div>
+            <div class="col-1">
+                <br/>
+            </div>
+        </div>
+        <div class=" form-group mt-2">
+            <div class="col-9 text-right blockquote">
+                <label>4</label>
+                <label>The country that has the highest in Barley Production? </label>
+            </div>
+            <br/>
+            <div class="col-6 blockquote">
+                <input type="radio" id="Russia" value="Russia" formControlName="question4">
+                <label class="margin-left">Russia</label>
+                <input class="margin-left" type="radio" id="China" value="China" formControlName="question4">
+                <label class="margin-left">China</label>
+            </div>
+            <div class="col-1">
+                <br/>
+            </div>
+        </div>
+        <div class=" form-group mt-2">
+            <div class="col-9 text-right blockquote">
+                <label>5</label>
+                <label>Volcanic eruption do not occur in the </label>
+            </div>
+            <br/>
+            <div class="col-6 blockquote">
+                <input type="radio" id="Caribbean sea" value="Caribbean sea" formControlName="question5">
+                <label class="margin-left">Caribbean sea</label>
+                <input class="margin-left" type="radio" id="Baltic sea" value="Baltic sea" formControlName="question5">
+                <label class="margin-left">Baltic sea</label>
+            </div>
+            <div class="col-1">
+                <br/>
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2">
+            </div>
+            <div class="col-9 text-right">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </form>
+</div>

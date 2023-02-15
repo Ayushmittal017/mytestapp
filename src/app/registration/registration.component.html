@@ -1,0 +1,96 @@
+<div class="container p-5 background-color">
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-12 text-center">
+             <h2>Registration</h2>
+          </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>Name:</label>
+            </div>
+            <div class="col-9">
+                <input type="text" id="Name" class="form-control" formControlName="Name">
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>DOB: </label>
+            </div>
+            <div class="col-9 ">
+                <input type="date" class="form-control" formControlName="DOB" id="date">
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>Gender: </label>
+            </div>
+            <div class="col-9 ">
+                <input type="radio" id="male" value="male" formControlName="Gender">
+                <label class="margin-left">Male</label>
+                <input class="margin-left" type="radio" id="female" value="female" formControlName="Gender">
+                <label class="margin-left">Female</label>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>PhoneNo: </label>
+            </div>
+            <div class="col-9 ">
+                <input type="number" formControlName="PhoneNo" id="PhoneNo" class="form-control">
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>Address: </label>
+            </div>
+            <div class="col-9 ">
+                <textarea class="form-control" formControlName="Address"></textarea>
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>EmailId: </label>
+            </div>
+            <div class="col-9 ">
+                <input type="text" id="EmailId" class="form-control" formControlName="EmailId">
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2 text-right">
+                <label>Designation: </label>
+            </div>
+            <div class="col-9 ">
+                <input type="text" id="EmailId" class="form-control" formControlName="Designation">
+                <span class="text-danger" >*</span>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+        <div class="row form-group mt-2">
+            <div class="col-2">
+            </div>
+            <div class="col-9 text-right">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </form>
+</div>
